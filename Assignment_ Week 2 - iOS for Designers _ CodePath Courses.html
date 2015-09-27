@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)http://courses.codepath.com/courses/ios_for_designers/unit/2#!assignment -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Assignment: Week 2 - iOS for Designers | CodePath Courses</title><link href="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/bootstrap-theme.min.css" rel="stylesheet" type="text/css"><link href="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/typeahead-bootstrap.css" rel="stylesheet" type="text/css"><link href="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/highlight.css" rel="stylesheet" type="text/css"><link href="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/style.css" rel="stylesheet" type="text/css"><meta charset="UTF-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="noindex, nofollow" name="robots"><script type="text/javascript" async="" src="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/linkid.js"></script><script async="" src="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/analytics.js"></script><script src="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/honeybadger.min.js" type="text/javascript"></script><script type="text/javascript">// Google analytics setup
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', "UA-47712505-3", "codepath.com");
+ga('require', 'linkid', 'linkid.js');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+
+if (typeof(Honeybadger) != "undefined") {
+    // Honeybadger setup
+    Honeybadger.configure({
+      api_key: '974203c40f99f5c953b19baf4a3e60ee' // Public API key
+    });
+}</script></head><body><div class="navbar navbar-default" id="main-nav"><div class="container"><div class="navbar-header"><button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="http://courses.codepath.com/">CodePath Courses</a></div><div class="navbar-collapse collapse"><ul class="nav navbar-nav navbar-right"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" style="overflow:hidden"><div class="pull-left"><img width="20" class="img-circle img-responsive" src="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/1028901"></div>&nbsp;<div class="pull-right">Sean Smith <b class="caret"></b></div></a><ul class="dropdown-menu"><li><a data-method="delete" href="http://courses.codepath.com/sessions">Logout</a></li></ul></li></ul></div></div></div><div class="container"><div class="title clearfix"><h1>iOS for Designers Outline</h1><p class="alert alert-info">Need help? Email us at <a class="alert-link" href="mailto:support@codepath.com">support@codepath.com</a></p></div><div class="row"><div class="col-md-2"><ul class="nav nav-pills nav-stacked"><li><a href="http://courses.codepath.com/courses/ios_for_designers/pages/bootcamp_structure">Overview</a></li><li><a href="http://courses.codepath.com/courses/ios_for_designers/unit/1#!module"><span>Week 1 &nbsp;</span><span class="glyphicon glyphicon-ok"></span></a></li><li class="active"><a href="http://courses.codepath.com/courses/ios_for_designers/unit/2#!module"><span>Week 2 &nbsp;</span><span class="glyphicon glyphicon-map-marker"></span></a></li><li><a href="http://courses.codepath.com/courses/ios_for_designers/unit/3#!module"><span>Week 3 &nbsp;</span></a></li><li><a href="http://courses.codepath.com/courses/ios_for_designers/unit/4#!module"><span>Week 4 &nbsp;</span></a></li><li><a href="http://courses.codepath.com/courses/ios_for_designers/unit/5#!module"><span>Week 5 &nbsp;</span></a></li><li><a href="http://courses.codepath.com/courses/ios_for_designers/unit/6#!module"><span>Week 6 &nbsp;</span></a></li><li><a href="http://courses.codepath.com/courses/ios_for_designers/unit/7#!module"><span>Week 7 &nbsp;</span></a></li><li><a href="http://courses.codepath.com/courses/ios_for_designers/unit/8#!module"><span>Week 8 &nbsp;</span></a></li></ul></div><div class="col-md-10"><ul class="nav nav-tabs"><li class=""><a data-toggle="tab" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#module" aria-expanded="false">Resources</a></li><li><a data-toggle="tab" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#exercises">Lab Exercise</a></li><li class="active"><a data-toggle="tab" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#assignment" aria-expanded="true">Assignment</a></li><li><a data-toggle="tab" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#milestone">Group</a></li><li><a data-toggle="tab" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#skills">Skills</a></li></ul><div class="tab-content section-content"><div class="tab-pane" id="module"><div class="panel panel-default"><div class="panel-body markdown-body"><h2><a class="anchor" id="heading-week-2-events-and-states" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-week-2-events-and-states"><span class="glyphicon glyphicon-link"></span></a>Week 2 - Events and States</h2>
+
+<p>The goal of this week is to listen to events like tapping, scrolling, and editing and do things like change the position of views, navigate between screens, and transition to or from loading states.</p>
+
+<p>By the end of the week, you should be able to take a set of mocks, and implement them with a high degree of fidelity and interactability, including error and loading states. The homework this week is to do that for a set of Carousel mocks.</p>
+
+<h2><a class="anchor" id="heading-demos" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-demos"><span class="glyphicon glyphicon-link"></span></a>Demos</h2>
+
+<p><img src="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/screenshot.gif" title="Facebook GIF" width="250" alt="Facebook GIF">&nbsp;&nbsp;<img src="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/TBJkE46.gif" title="Carousel GIF" width="250" alt="Carousel GIF"></p>
+
+<h2><a class="anchor" id="heading-skills-overview" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-skills-overview"><span class="glyphicon glyphicon-link"></span></a>Skills Overview</h2>
+
+<ul>
+<li>Events and Delegates
+
+<ul>
+<li>Events via targets and selectors</li>
+<li>Delegation for simple controls like UIAlertView and UIActionSheet</li>
+<li>Handling UITextField delegate events</li>
+<li>Handling scroll view events</li>
+</ul></li>
+<li>Application states
+
+<ul>
+<li>Mocking an transient loading state</li>
+<li>Transitioning between empty and populated states</li>
+<li>Performing selectors after delays</li>
+</ul></li>
+</ul>
+
+<p>Refer to the <a href="http://courses.codepath.com/courses/ios_for_designers/unit/2#!skills">Week 2 Skills checklist</a> to review the full topics introduced this week.</p>
+</div></div></div><div class="tab-pane" id="exercises"><div class="panel panel-default"><div class="panel-body markdown-body"><h2><a class="anchor" id="heading-week-2-challenges" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-week-2-challenges"><span class="glyphicon glyphicon-link"></span></a>Week 2 Challenges</h2>
+
+<h3><a class="anchor" id="heading-challenge-1-facebook" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-challenge-1-facebook"><span class="glyphicon glyphicon-link"></span></a>Challenge #1: Facebook</h3>
+
+<p><img src="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/screenshot.gif" title="Facebook GIF" width="250" alt="Facebook GIF"></p>
+
+<h4><a class="anchor" id="heading-assets" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-assets"><span class="glyphicon glyphicon-link"></span></a>Assets</h4>
+
+<p>You can download the Facebook assets <a href="https://www.dropbox.com/s/p1anm5gdyaz22cm/Facebook%20Assets.zip">here</a>.</p>
+
+<h4><a class="anchor" id="heading-milestones" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-milestones"><span class="glyphicon glyphicon-link"></span></a>Milestones</h4>
+
+<ol>
+<li>Setup:
+
+<ul>
+<li>Open the Facebook project from Week 1. If you don't have it, you can download a sample implementation <a href="https://www.dropbox.com/s/n8hwg96xw439820/Facebook.zip">here</a>.</li>
+<li>Add the additional assets above. <a href="https://guides.codepath.com/ios/Adding-Image-Assets">Adding Image Assets</a></li>
+<li>Add the <a href="https://www.dropbox.com/s/van89swo47j0im1/Common.swift?dl=0">Common.swift</a> file to your project. Be sure to select "Copy items if needed".</li>
+</ul></li>
+<li>Add LoginViewController to Storyboard. <a href="https://guides.codepath.com/ios/Creating-Custom-View-Controllers">Creating Custom View Controllers</a>
+
+<ul>
+<li>Add Facebook logo, form background, UITextFields, button w/ various states, and UILabels.</li>
+</ul></li>
+<li>On show keyboard, readjust views. <a href="https://guides.codepath.com/ios/Registering-for-Keyboard-Events">Registering for Keyboard Events</a>, <a href="https://guides.codepath.com/ios/Animating-View-Properties">Animating View Properties</a></li>
+<li>On hide keyboard, readjust views.</li>
+<li>On editing changed, check if either the email field or the password field is blank. If so, disable the login button. If not, enable the login button. Views are enabled/disabled like this: <code>button.enabled = true</code> or <code>button.enabled = false</code>.</li>
+<li>On submit button,
+
+<ul>
+<li>Show the loading indicator in the button. After 2 seconds, check the email/password. If it's wrong, display an alert. If it's correct, modally present the main tab bar controller. <a href="https://guides.codepath.com/ios/Calling-a-Method-After-Delay">Calling Method After Delay</a>, <a href="https://guides.codepath.com/ios/Using-UIAlertController">Using UIAlertController</a></li>
+</ul></li>
+<li>FeedViewController
+
+<ul>
+<li>In <code>viewDidAppear</code>, show a UIActivityIndicatorView. After 2 seconds, show the feed image to simulate the network loading time. <a href="http://guides.codepath.com/ios/Using-UIActivityIndicatorView">Using UIActivityIndicatorView</a></li>
+</ul></li>
+<li>Settings
+
+<ul>
+<li>On log out button, display an action sheet. On confirm log out, modally present the login screen. <a href="https://guides.codepath.com/ios/Using-UIAlertController">Using UIActionController</a></li>
+</ul></li>
+<li>Bonus: Based on the login credentials, present a FeedViewController that has the feed of a new user vs. an existing user. Tip: Use NSUserDefaults to store whether it is a new or existing user. NSUserDefaults is like cookies for iOS. <a href="https://guides.codepath.com/ios/Using-NSUserDefaults">Using NSUserDefaults</a></li>
+<li>Bonus: Implement pull to refresh on the FeedViewController using UIRefreshControl. <a href="https://guides.codepath.com/ios/Using-UIRefreshControl">Using UIRefreshControl</a></li>
+<li>Bonus: Add infinite feed loading by registering for the UIScrollViewDelegate and detecting when the user reaches the bottom of the feed. You'll need to programatically add a new UIImageView with another instance of the feed image and move the UIActivityIndicatorView down. <a href="https://guides.codepath.com/ios/Programmatically-Creating-Views">Programmatically Creating Views</a></li>
+</ol>
+
+<h3><a class="anchor" id="heading-challenge-2-furry-friends" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-challenge-2-furry-friends"><span class="glyphicon glyphicon-link"></span></a>Challenge #2: Furry Friends</h3>
+
+<h4><a class="anchor" id="1-heading-assets" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#1-heading-assets"><span class="glyphicon glyphicon-link"></span></a>Assets</h4>
+
+<p>You can download the Facebook assets <a href="https://www.dropbox.com/s/1t28xbu6p8iosg6/FurryFriends%20Assets.zip?dl=0">here</a>.</p>
+
+<h4><a class="anchor" id="1-heading-milestones" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#1-heading-milestones"><span class="glyphicon glyphicon-link"></span></a>Milestones</h4>
+
+<ol>
+<li>Setup: Create a new project, disable Auto Layout, and import assets from above. <a href="https://guides.codepath.com/ios/New-Project-%28designers%29">New Project</a></li>
+<li>Make a screen to move the Rabbit around <a href="https://guides.codepath.com/ios/Creating-Custom-View-Controllers">Creating Custom View Controllers</a>
+
+<ul>
+<li>Create a RabbitViewController.swift file and associate it with a view controller in the Storyboard.</li>
+<li>Add the rabbit image with 4 buttons for left, right, up, and down. <a href="https://guides.codepath.com/ios/Configure-a-Button">Configure a Button</a></li>
+<li>Add a button to hide the rabbit.</li>
+<li>Add a button to show the rabbit again.</li>
+</ul></li>
+<li>Feeding the rabbit
+
+<ul>
+<li>Add a leaf button to feed the rabbit and make it get bigger. <a href="https://guides.codepath.com/ios/Using-View-Transforms">Using View Transforms</a></li>
+<li>Keep track of the current scale of the rabbit in a property. Add the property at the top of the file, right under the class name.
+
+<ul>
+<li><code>var scale: CGFloat! = 1</code></li>
+</ul></li>
+<li>Tapping the leaf button should increase the scale.</li>
+</ul></li>
+<li>Shrinking the rabbit
+
+<ul>
+<li>Add a tear button that represents when the rabbit gets sad and makes it shrink. <a href="https://guides.codepath.com/ios/Using-View-Transforms">Using View Transforms</a></li>
+<li>Use the same <code>scale</code> variable you made in the previous step to keep track of the scale as the rabbit shrinks.</li>
+<li>Tapping the tear button should decrease the scale.</li>
+</ul></li>
+<li>Add animation to the scale, so the rabbit grows or shrinks smoothly. <a href="https://guides.codepath.com/ios/Animating-View-Properties">Animating View Properties</a></li>
+<li>Make the rabbit go to where you tapped. <a href="https://guides.codepath.com/ios/Using-Gesture-Recognizers">Using Gesture Recognizers</a></li>
+<li>Resetting the rabbit
+
+<ul>
+<li>Add a button to reset the rabbit. <a href="https://guides.codepath.com/ios/Using-View-Transforms">Using View Transforms</a></li>
+</ul></li>
+<li>Rotating the rabbit
+
+<ul>
+<li>Add buttons to rotate the rabbit. <a href="https://guides.codepath.com/ios/Using-View-Transforms">Using View Transforms</a></li>
+</ul></li>
+<li>Scroll Views
+
+<ul>
+<li>Add parallax between the rabbit and the field. <a href="https://guides.codepath.com/ios/Using-UIScrollView">Using UIScrollView</a></li>
+<li>Add welcome screens with UIPageControl. <a href="https://guides.codepath.com/ios/Using-UIPageControl">Using UIPageControl</a></li>
+</ul></li>
+<li>Chatting with the rabbit
+
+<ul>
+<li>Add a textfield, a button, and a label to be able to chat with the rabbit. After tapping the button, you should read the textfield and update the label with the rabbit's response. Just support saying "Hello" for now.</li>
+<li>Add a generic response if the text in the textfield isn't recognized.</li>
+<li>Use case: Add the ability to respond to "What's your name?" and "Will you be my friend?"</li>
+<li>Use case: Add a delay before the label is updated.</li>
+<li>Polish: Clear the label after tapping the button while you're waiting for the rabbit to respond.</li>
+<li>Add a UIActivityIndicatorView. Call <code>startAnimating</code> when the button is tapped and <code>stopAnimating</code> after the delay. <a href="https://guides.codepath.com/ios/Using-UIActivityIndicatorView">Using UIActivityIndicatorView</a></li>
+</ul></li>
+<li>Login Screen
+
+<ul>
+<li>Create a login screen. Add elements for the email field, password field, and login button. Configure the password field for secure entry.</li>
+<li>Create an action on login button. Call performSegueWithIdentifier on the login button. <a href="https://guides.codepath.com/ios/Using-Modal-Transitions#triggering-the-transition-manually">Using Modal Transitions</a></li>
+<li>Add a delay after clicking the login button. Add a UIActivityIndicatorView. <a href="https://guides.codepath.com/ios/Calling-a-Method-After-Delay">Calling Method After Delay</a>, <a href="https://guides.codepath.com/ios/Using-UIActivityIndicatorView">Using UIActivityIndicatorView</a></li>
+<li>Check the email and password. If it's correct, segue. If it's incorrect, display a UIAlertView. <a href="https://guides.codepath.com/ios/Using-UIAlertView">Using UIAlertView</a></li>
+<li>Disable the login button if there is no text in either the login field or the password field.</li>
+<li>Add a logout button to the chat view. Tapping the logout button dismisses the view controller.</li>
+<li>Tapping the logout button displays an action sheet confirming that you want to logout.</li>
+</ul></li>
+</ol>
+</div></div></div><div class="tab-pane active" id="assignment"><div class="panel panel-default"><div class="panel-body markdown-body"><h2><a class="anchor" id="heading-week-2-project-carousel" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-week-2-project-carousel"><span class="glyphicon glyphicon-link"></span></a>Week 2 Project: Carousel</h2>
+
+<p><strong>Due:</strong> Monday, September 28th at 11:59pm</p>
+
+<h3><a class="anchor" id="heading-overview" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-overview"><span class="glyphicon glyphicon-link"></span></a>Overview</h3>
+
+<p>The purpose of this homework is to leverage views, view properties, and events to create a high fidelity prototype that is difficult to distinguish from a production app. We're going to use the techniques from this week to implement the Carousel app from the signed out state to the basic signed in state.</p>
+
+<p><img src="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/TBJkE46.gif" title="Carousel GIF" width="250" alt="Carousel GIF"></p>
+
+<h3><a class="anchor" id="heading-project-requirements" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-project-requirements"><span class="glyphicon glyphicon-link"></span></a>Project Requirements</h3>
+
+<ul>
+<li>Static photo tiles on the initial screen
+
+<ul>
+<li>Optional: Photo tiles move with scrolling</li>
+</ul></li>
+<li>Sign In
+
+<ul>
+<li>Tapping on email/password reveals the keyboard and shifts the scrollview and Sign In button up.</li>
+<li>User sees an error alert when no email is present or no password is present.</li>
+<li>User sees a loading screen upon tapping the Sign In button.</li>
+<li><code>alertController.dismissViewControllerAnimated(true, completion: nil)</code> dismisses the alert controller loading screen with no buttons.</li>
+<li>User sees an error alert when entering the wrong email/password combination.</li>
+<li>User is taken to the tutorial screens upon entering the correct email/password combination.</li>
+<li>Optional: When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.</li>
+<li>Optional: On appear, scale the form up and fade it in.</li>
+</ul></li>
+<li>Optional: Sign Up
+
+<ul>
+<li>Optional: Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up.</li>
+<li>Optional: Tapping the Agree to Terms checkbox selects the checkbox.</li>
+<li>Optional: Tapping on Terms shows a webview with the terms.</li>
+<li>Optional: User is taken to the tutorial screens upon tapping the "Create a Dropbox" button.</li>
+</ul></li>
+<li>Tutorial Screens
+
+<ul>
+<li>User can page between the screens</li>
+<li>Optional: User can page between the screens with updated dots</li>
+<li>Optional: Upon reaching the 4th page, hide the dots and show the "Take Carousel for a Spin" button.</li>
+</ul></li>
+<li>Image Timeline
+
+<ul>
+<li>Display a scrollable view of images.</li>
+<li>User can tap on the conversations button to see the conversations screen (push).</li>
+<li>User can tap on the profile image to see the settings view (modal from below).</li>
+</ul></li>
+<li>Settings
+
+<ul>
+<li>User can dismiss the settings screen.</li>
+<li>User can log out</li>
+</ul></li>
+<li>Optional: Learn more about Carousel
+
+<ul>
+<li>Optional: Show the "Learn more about Carousel" button in the photo timeline.</li>
+<li>Optional: Tap the X to dismiss the banner</li>
+<li>Optional: Track the 3 events:
+
+<ul>
+<li>View a photo full screen</li>
+<li>Swipe left and right</li>
+<li>Share a photo</li>
+</ul></li>
+<li>Optional: Upon completion of the events, mark them green.</li>
+<li>Optional: When all events are completed, dismiss the banner.</li>
+</ul></li>
+</ul>
+
+<h3><a class="anchor" id="heading-assets" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-assets"><span class="glyphicon glyphicon-link"></span></a>Assets</h3>
+
+<p>You can download the Carousel assets <a href="https://www.dropbox.com/s/53llomcr20qicxo/Carousel%20Assets.zip">here</a>.</p>
+
+<h3><a class="anchor" id="heading-milestones" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-milestones"><span class="glyphicon glyphicon-link"></span></a>Milestones</h3>
+
+<p>The key to implementing a complex app is to break it up into a bunch of small pieces until it's easy to implement any given piece. You should try implementing this homework by following the milestones below. Be sure to run the simulator frequently as you hit milestones.</p>
+
+<ol>
+<li>Setup:
+
+<ul>
+<li>Create a new project (disable Auto Layout). <a href="https://guides.codepath.com/ios/New-Project-%28designers%29">New Project</a></li>
+<li>Add the image assets above. <a href="https://guides.codepath.com/ios/Adding-Image-Assets">Adding Image Assets</a></li>
+<li>Configure the app icon and splash screen. <a href="https://guides.codepath.com/ios/Adding-Image-Assets#app-icon-and-launch-image">App icon and launch image</a></li>
+<li>Add the <a href="https://www.dropbox.com/s/van89swo47j0im1/Common.swift?dl=0">Common.swift</a> file to your project. Be sure to select "Copy items if needed".</li>
+</ul></li>
+<li>Intro Screen
+
+<ul>
+<li>In the Storyboard, add a custom view controller for the IntroViewController. <a href="https://guides.codepath.com/ios/Creating-Custom-View-Controllers">Creating Custom View Controller</a></li>
+<li>Configure the view controller to be freeform, so that you can make it long enough to see the entire intro page. <a href="https://guides.codepath.com/ios/Creating-a-Free-Form-View-Controller">Creating Free Form View Controller</a></li>
+<li>Add UIImageViews for each photo tile in the region below. <a href="https://guides.codepath.com/ios/Using-UIImageView">Using UIImageView</a></li>
+<li>Configure the content size of the scroll view. <a href="https://guides.codepath.com/ios/Using-UIScrollView">Using UIScrollView</a></li>
+<li>Optional: Register for the scroll view scroll events <a href="https://guides.codepath.com/ios/Using-UIScrollView#registering-for-scroll-events">Registering for scroll events</a></li>
+<li>Optional: Whenever a scroll event happens, configure the transform property on the image view. <a href="https://guides.codepath.com/ios/Using-View-Transforms">Using View Transforms</a>,<a href="https://guides.codepath.com/ios/Animating-View-Properties">Animating View Properties</a></li>
+</ul></li>
+<li>Sign In
+
+<ul>
+<li>Add custom nav bar as a UIImageView, form background, text fields, text, and Sign In button.</li>
+<li>Tapping the Sign In button with either a blank email or blank password should show an error alert. <a href="https://guides.codepath.com/ios/Using-UIAlertController">Using UIAlertController</a></li>
+<li>Tapping the Sign In button with a populated email and password field should display a loading alert for 2 seconds. After the 2 seconds are up, you should do one of the following (<a href="https://guides.codepath.com/ios/Calling-a-Method-After-Delay">Calling a Method After Delay</a>):</li>
+<li>Display an error for incorrect email/password.</li>
+<li>Go to the tutorial screens.</li>
+</ul></li>
+<li>Tutorial Screens
+
+<ul>
+<li>Create a custom free form view controller that is wide enough for 4 screens. <a href="https://guides.codepath.com/ios/Creating-Custom-View-Controllers">Creating Custom View Controllers</a>, <a href="https://guides.codepath.com/ios/Creating-a-Free-Form-View-Controller">Creating a Free Form View Controller</a></li>
+<li>Add a UIScrollView with paging enabled and 4 UIImageViews for the welcome screens (Note: we're explicitly not using UIPageViewController, which requires extra coding, to build these screens)</li>
+<li>Add a UIPageControl (should be outside the scrollview) and link it with the scrollview. <a href="https://guides.codepath.com/ios/Using-UIPageControl">Using UIPageControl</a></li>
+<li>Add the "Take Carousel for a Spin" button (should be outside the scrollview). Should have an initial alpha of 0, set the alpha to 1 upon reaching the 4th page.</li>
+<li>Tapping the "Take Carousel for a Spin" button should launch the Image Timeline (in a Navigation Controller) modally.</li>
+</ul></li>
+<li>Image Timeline
+
+<ul>
+<li>Add a UIImageView for the custom nav bar and a scrollview for the image feed.</li>
+<li>Add buttons for Settings and Conversations.</li>
+<li>Tapping the Conversation button should push the ConversationsViewController.</li>
+<li>Tapping the Settings button should modally present the SettingsViewController.</li>
+</ul></li>
+<li>Create Account
+
+<ul>
+<li>Add custom nav bar, form background, text fields, text, terms text and button, and Create Account button.</li>
+<li>Upon showing the keyboard, move the elements to be visible. <a href="https://guides.codepath.com/ios/Registering-for-Keyboard-Events">Registering for Keyboard Events</a></li>
+<li>Add a selected state for the terms button. <a href="https://guides.codepath.com/ios/Configure-a-Button">Configure a Button</a></li>
+<li>Terms opens webview w/ mobile terms of service page.</li>
+</ul></li>
+</ol>
+
+<h3><a class="anchor" id="heading-submission-instructions" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-submission-instructions"><span class="glyphicon glyphicon-link"></span></a>Submission instructions</h3>
+
+<p>Follow the guide for <a href="http://courses.codepath.com/courses/ios_for_designers/pages/submitting_assignments" alt="Submitting Assignments" title="Submitting Assignments">Submitting Assignments</a>. Remember to include an animated gif and # of hours spent in the README.</p>
+</div></div></div><div class="tab-pane" id="milestone"><div class="panel panel-default"><div class="panel-body markdown-body"><h2><a class="anchor" id="heading-week-2-group-milestone-wireframing" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-week-2-group-milestone-wireframing"><span class="glyphicon glyphicon-link"></span></a>Week 2 Group Milestone - Wireframing</h2>
+
+<p>The group project has weekly milestones that reinforces the lessons from the previous week. The group project is an important validation that you can apply the concepts from the homework to an arbitrary project. Also, it's an opportunity to be creative an have a little fun with iOS.</p>
+
+<p>This week's milestone is to decide on an app idea and create basic wireframes. Treat this as a time-constrained hackathon and just go with the best idea you can think of in an initial brainstorming session.</p>
+
+<p>Here are some possible directions:</p>
+
+<ul>
+<li>Incorporate your current or upcoming project work. The advantage to this is you can log more hours on iOS in the next 6 weeks without feeling as guilty.</li>
+<li>Clone an app, but add either interaction or product twists. That way, you don't have to design a product from scratch.</li>
+<li>Something completely different. This can be the most rewarding, although it's the most time consuming.</li>
+</ul>
+
+<p>Your milestone for next week will be to create interactive mocks in Xcode. The wireframes this week can be low or medium fidelity, but they have to be a complete product/UX story.</p>
+
+<h3><a class="anchor" id="heading-submission-instructions" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-submission-instructions"><span class="glyphicon glyphicon-link"></span></a>Submission instructions</h3>
+
+<p>Create a repository on Github with a project codename. Check in your wireframes and add timothy1ee as a collaborator in the project. The repository can be public or private.</p>
+</div></div></div><div class="tab-pane" id="skills"><div class="panel panel-default"><div class="panel-body markdown-body"><h2><a class="anchor" id="heading-week-2-skills-checklist" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-week-2-skills-checklist"><span class="glyphicon glyphicon-link"></span></a>Week 2 Skills Checklist</h2>
+
+<h3><a class="anchor" id="heading-uialertview-and-uiactionsheet" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-uialertview-and-uiactionsheet"><span class="glyphicon glyphicon-link"></span></a>UIAlertView and UIActionSheet</h3>
+
+<ul>
+<li>Show a UIAlertView</li>
+<li>Determine which button was pressed in a UIAlertView</li>
+<li>Show a UIActionSheet</li>
+<li>Determine which button was pressed in a UIActionSheet</li>
+</ul>
+
+<h3><a class="anchor" id="heading-uiactivityindicatorview" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-uiactivityindicatorview"><span class="glyphicon glyphicon-link"></span></a>UIActivityIndicatorView</h3>
+
+<ul>
+<li>Create a UIActivityIndicatorView</li>
+<li>Start animating</li>
+<li>Stop animating</li>
+</ul>
+
+<h3><a class="anchor" id="heading-uiscrollview" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-uiscrollview"><span class="glyphicon glyphicon-link"></span></a>UIScrollView</h3>
+
+<ul>
+<li>Creating a UIScrollView</li>
+<li>Embedding a long UIImageView</li>
+<li>Setting the content size</li>
+<li>Setting the bounce settings</li>
+</ul>
+
+<h3><a class="anchor" id="heading-uitextfield" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-uitextfield"><span class="glyphicon glyphicon-link"></span></a>UITextField</h3>
+
+<ul>
+<li>Handle user begin editing</li>
+<li>Handle text change</li>
+<li>Handle user end editing</li>
+</ul>
+
+<h3><a class="anchor" id="heading-keyboard" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-keyboard"><span class="glyphicon glyphicon-link"></span></a>Keyboard</h3>
+
+<ul>
+<li>Handle keyboard will appear</li>
+<li>Handle keyboard will hide</li>
+</ul>
+
+<h3><a class="anchor" id="heading-timing" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-timing"><span class="glyphicon glyphicon-link"></span></a>Timing</h3>
+
+<ul>
+<li>Call a method after a delay</li>
+</ul>
+
+<h3><a class="anchor" id="heading-modal-view-controllers" href="http://courses.codepath.com/courses/ios_for_designers/unit/2#heading-modal-view-controllers"><span class="glyphicon glyphicon-link"></span></a>Modal View Controllers</h3>
+
+<ul>
+<li>Presenting a view controller</li>
+</ul>
+</div></div></div></div></div></div></div><script src="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/jquery.js" type="text/javascript"></script><script src="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/jquery-ujs.js" type="text/javascript"></script><script src="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/sugar.min.js" type="text/javascript"></script><script src="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/bootstrap.min.js" type="text/javascript"></script><script src="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/typeahead.min.js" type="text/javascript"></script><script src="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/pdfobject.min.js" type="text/javascript"></script><script src="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/jquery.fitvids.js" type="text/javascript"></script><script src="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/oauth.js" type="text/javascript"></script><script src="./Assignment_ Week 2 - iOS for Designers _ CodePath Courses_files/application.js" type="text/javascript"></script><span id="buffer-extension-hover-button" style="display: none;position: absolute;z-index: 8675309;width: 100px;height: 25px;background-image: url(chrome-extension://noojglkidnpfjbincgijbaiedldjfbhh/data/shared/img/buffer-hover-icon@2x.png);background-size: 100px 25px;opacity: 0.9;cursor: pointer;"></span></body></html>
