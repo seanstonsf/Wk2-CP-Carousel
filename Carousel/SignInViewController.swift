@@ -110,6 +110,8 @@ class SignInViewController: UIViewController {
     }
 
     @IBAction func didPressSignInButton(sender: AnyObject) {
+        view.endEditing(true)
+
         
         if signInEmailField.text == "" && signInPasswordField.text == "" {
 //            print("Empty")
@@ -130,4 +132,11 @@ class SignInViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func onTap(sender: AnyObject) {
+        view.endEditing(true)
+    }
+    
+    
+    
 }
